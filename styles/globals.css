@@ -1,5 +1,11 @@
 html,
 body {
+  background-color: #cbcbcb;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -13,4 +19,78 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.hide {
+  display: none;
+}
+
+.text-white {
+  color: white;
+  min-height: 70px;
+}
+
+.rotate-center {
+  -webkit-animation: rotate-center 0.6s ease-in-out both;
+  animation: rotate-center 0.6s ease-in-out both;
+}
+
+.slide-in-left {
+  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+#dice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70px;
+}
+
+#fakedice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  font: 1em sans-serif;
+  margin-top: 2em;
+  background-color: blue;
+  border-radius: 20px;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  border: none;
+}
+
+.button:hover {
+  background-color: rgb(0, 0, 159);
+  cursor: pointer;
+}
+.button:active {
+  background-color: rgb(36, 36, 211);
+  cursor: pointer;
 }
