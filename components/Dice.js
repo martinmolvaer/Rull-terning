@@ -20,6 +20,8 @@ const Dice = ({ num }) => {
       break;
     case 6:
       return <img src="https://svgshare.com/i/dam.svg" />;
+    default:
+      console.log(`default`);
   }
 
   return <div>{num}</div>;

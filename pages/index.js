@@ -1,8 +1,5 @@
-import Head from "next/head";
-import Image from "next/image";
 import { useState } from "react";
 import Dice from "../components/Dice";
-import styles from "../styles/Home.module.css";
 
 export default function Home() {
   const [dice, setDice] = useState(null);
@@ -25,7 +22,7 @@ export default function Home() {
           <Dice num={dice} />
         </div>
         <div>
-          <button className="button" onClick={() => rollDice(1, 6)}>
+          <button className="button" onClick={() => rollDice(1, 7)}>
             Rull terning
           </button>
         </div>
