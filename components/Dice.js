@@ -1,6 +1,7 @@
 import React from "react";
 
 const Dice = ({ num }) => {
+  console.log(num);
   switch (num) {
     case 1:
       return <img src="https://svgshare.com/i/dcC.svg" />;
