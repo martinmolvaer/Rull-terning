@@ -1,6 +1,7 @@
-import React from "react";
+import React from 'react';
 
 const Dice = ({ num }) => {
+  console.log(num);
   console.log(num);
   switch (num) {
     case 1:
